@@ -1,7 +1,10 @@
+/* styles.css */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    color: #333;
 }
 
 header {
@@ -9,24 +12,78 @@ header {
     color: white;
     padding: 1em;
     text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
 }
 
 nav ul li {
-    display: inline;
     margin: 0 15px;
 }
 
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.logo-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.logo-section img {
+    max-width: 100%;
+    height: auto;
+}
+
+.hero-content {
+    text-align: center;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    margin: 0.5em 0;
+}
+
+.hero-content p {
+    font-size: 1.5em;
+    margin: 0.5em 0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #DBC078;
+    color: #112d4e;
+    text-decoration: none;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
 main {
-    padding: 1em;
+    padding: 2em 1em;
+    margin-top: 80px; /* Adjust this if header height changes */
 }
 
 section {
     margin: 2em 0;
+    text-align: center;
 }
 
 footer {
@@ -34,4 +91,5 @@ footer {
     color: white;
     text-align: center;
     padding: 1em;
+    position: relative;
 }
