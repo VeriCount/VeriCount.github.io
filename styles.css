@@ -3,7 +3,7 @@
 /* Add the @font-face rule at the beginning */
 @font-face {
     font-family: 'Pier Regular';
-    src: url('/fonts/PierSans-Regular.otf') format('opentype');
+    src: url('fonts/PierSans-Regular.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
