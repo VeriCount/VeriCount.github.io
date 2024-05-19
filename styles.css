@@ -10,8 +10,7 @@ body {
 header {
     background-color: #112d4e;
     color: white;
-    padding: 1em;
-    text-align: center;
+    padding: 0.5em 1em;
     position: fixed;
     width: 100%;
     top: 0;
