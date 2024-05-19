@@ -9,6 +9,9 @@
 </head>
 <body>
     <header>
+        <div class="logo">
+            <img src="images/VeriCountLogo.png" alt="VeriCount Logo">
+        </div>
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
@@ -20,17 +23,35 @@
         </nav>
     </header>
     <main>
-        <section id="logo" class="logo-section">
-            <img src="images/VeriCountLogo.png" alt="VeriCount Logo">
-        </section>
-        <section id="home">
+        <section id="home" class="hero">
             <div class="hero-content">
-                <h1>Welcome to VeriCount</h1>
+                <h1>Simplify Inventory, Trust VeriCount</h1>
                 <p>White-glove home inventory services for peace of mind.</p>
                 <a href="#about" class="btn">Learn More</a>
             </div>
         </section>
-        <!-- Additional sections here -->
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Learn more about our team and mission.</p>
+        </section>
+        <section id="services">
+            <h2>Our Services</h2>
+            <p>Details on residential and business inventory services.</p>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <section id="resources">
+            <h2>Resources</h2>
+            <p>FAQs and other resources for our clients.</p>
+        </section>
     </main>
     <footer>
         <p>&copy; 2024 VeriCount</p>
