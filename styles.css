@@ -3,8 +3,8 @@
 /* Add the @font-face rule at the beginning */
 @font-face {
     font-family: 'Pier Regular';
-    src: url('fonts/PierSans-Regular.woff2') format('woff2'),
-         url('fonts/PierSans-Regular.woff') format('woff');
+    src: url('/fonts/PierSans-Regular.woff2') format('woff2'),
+         url('/fonts/PierSans-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -107,25 +107,21 @@ footer {
     position: relative;
 }
 
-/* Add this at the end of the file */
-.professional-section {
+/* New section styling */
+.highlight-section {
     background-color: #112d4e;
-    color: #ffffff;
-    padding: 2em 1em;
+    color: #DBC078; /* Color for the heading */
+    padding: 40px;
     text-align: center;
 }
 
-.professional-section .container {
+.highlight-section h2 {
+    font-size: 2.5em; /* Keep this the same size */
+}
+
+.highlight-section p {
+    font-size: 1em; /* Decrease font size */
+    color: white;   /* Change color to white */
     max-width: 800px;
     margin: 0 auto;
-}
-
-.professional-section h2 {
-    font-size: 2em;
-    margin-bottom: 1em;
-}
-
-.professional-section p {
-    font-size: 1.2em;
-    line-height: 1.5em;
 }
