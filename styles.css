@@ -3,8 +3,8 @@
 /* Add the @font-face rule at the beginning */
 @font-face {
     font-family: 'Pier Regular';
-    src: url('/fonts/PierSans-Regular.woff2') format('woff2'),
-         url('/fonts/PierSans-Regular.woff') format('woff');
+    src: url('fonts/PierSans-Regular.woff2') format('woff2'),
+         url('fonts/PierSans-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
