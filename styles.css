@@ -112,16 +112,41 @@ footer {
     background-color: #112d4e;
     color: #DBC078; /* Color for the heading */
     padding: 40px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left; /* Change to left-align text */
 }
 
-.highlight-section h2 {
+.highlight-content {
+    display: flex;
+    flex-direction: row; /* Align children in a row */
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px; /* Adjust as necessary */
+    margin: 0 auto;
+}
+
+.text-content {
+    max-width: 60%; /* Adjust as necessary */
+}
+
+.text-content h2 {
     font-size: 2.5em; /* Keep this the same size */
 }
 
-.highlight-section p {
+.text-content p {
     font-size: 1em; /* Decrease font size */
     color: white;   /* Change color to white */
-    max-width: 800px;
-    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.image-content {
+    max-width: 40%; /* Adjust as necessary */
+    margin-left: 20px; /* Space between text and image */
+}
+
+.image-content img {
+    width: 100%; /* Make image responsive */
+    height: auto;
 }
