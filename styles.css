@@ -106,3 +106,26 @@ footer {
     padding: 1em;
     position: relative;
 }
+
+/* Add this at the end of the file */
+.professional-section {
+    background-color: #112d4e;
+    color: #DBC078;
+    padding: 2em 1em;
+    text-align: center;
+}
+
+.professional-section .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.professional-section h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.professional-section p {
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
