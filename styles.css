@@ -150,3 +150,34 @@ footer {
     width: 100%; /* Make image responsive */
     height: auto;
 }
+
+.info-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #112d4e;
+    color: #DBC078;
+}
+
+.info-section .text-content {
+    max-width: 60%;
+    color: white; /* Change text color to white */
+}
+
+.info-section .text-content h2 {
+    font-size: 2em; /* Same size as before */
+}
+
+.info-section .text-content p {
+    font-size: 1em; /* Decreased by 2 sizes */
+}
+
+.info-section .image-content {
+    max-width: 35%;
+}
+
+.info-section .image-content img {
+    max-width: 100%;
+    height: auto;
+}
