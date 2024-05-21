@@ -1,22 +1,20 @@
-/* styles.css */
-
-/* Add the @font-face rule at the beginning */
 @font-face {
-    font-family: 'Pier Regular';
-    src: url('/fonts/PierSans-Regular.woff2') format('woff2'),
-         url('/fonts/PierSans-Regular.woff') format('woff');
+    font-family: 'Lora';
+    src: url('fonts/Lora-Regular.woff2') format('woff2'),
+         url('fonts/Lora-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 body {
-    font-family: 'Pier Regular', sans-serif;
+    font-family: 'Lora', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     color: #333;
 }
 
+/* Keep the rest of your CSS unchanged */
 header {
     background-color: #112d4e;
     color: white;
@@ -105,79 +103,4 @@ footer {
     text-align: center;
     padding: 1em;
     position: relative;
-}
-
-/* New section styling */
-.highlight-section {
-    background-color: #112d4e;
-    color: #DBC078; /* Color for the heading */
-    padding: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: left; /* Change to left-align text */
-}
-
-.highlight-content {
-    display: flex;
-    flex-direction: row; /* Align children in a row */
-    align-items: center;
-    justify-content: space-between;
-    max-width: 1200px; /* Adjust as necessary */
-    margin: 0 auto;
-}
-
-.text-content {
-    max-width: 60%; /* Adjust as necessary */
-}
-
-.text-content h2 {
-    font-size: 2.5em; /* Keep this the same size */
-}
-
-.text-content p {
-    font-size: 1em; /* Decrease font size */
-    color: white;   /* Change color to white */
-    margin-top: 10px;
-}
-
-.image-content {
-    max-width: 40%; /* Adjust as necessary */
-    margin-left: 20px; /* Space between text and image */
-}
-
-.image-content img {
-    width: 100%; /* Make image responsive */
-    height: auto;
-}
-
-.info-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #112d4e;
-    color: #DBC078;
-}
-
-.info-section .text-content {
-    max-width: 60%;
-    color: white; /* Change text color to white */
-}
-
-.info-section .text-content h2 {
-    font-size: 2em; /* Same size as before */
-}
-
-.info-section .text-content p {
-    font-size: 1em; /* Decreased by 2 sizes */
-}
-
-.info-section .image-content {
-    max-width: 35%;
-}
-
-.info-section .image-content img {
-    max-width: 100%;
-    height: auto;
 }
