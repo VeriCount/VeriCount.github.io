@@ -1,3 +1,5 @@
+/* styles.css */
+
 /* Add the @font-face rule at the beginning */
 @font-face {
     font-family: 'Lora';
@@ -123,7 +125,7 @@ footer {
 .about-text h2 {
     font-size: 2em;
     margin-bottom: 0.5em;
-    color: #cbb26b; /* Set the color for the section title */
+    color: #cbb26b;
 }
 
 .about-image {
@@ -156,17 +158,17 @@ footer {
 
 #services-overview h3 {
     font-size: 1.5em;
-    color: white;
+    color: #cbb26b;
 }
 
 #services-overview .service-description {
-    color: #DBC078;
+    color: #f9f9f9;
     font-size: 0.9em;
     margin: 10px 0;
 }
 
 #services-overview .service-link {
-    color: #DBC078;
+    color: #cbb26b;
     text-decoration: none;
     font-weight: bold;
 }
