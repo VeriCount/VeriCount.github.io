@@ -136,3 +136,38 @@ footer {
     max-width: 100%;
     height: auto;
 }
+#services-overview {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #112d4e;
+    color: white;
+}
+
+#services-overview .column {
+    width: 30%;
+    text-align: center;
+}
+
+#services-overview .icon img {
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+}
+
+#services-overview h3 {
+    font-size: 1.5em;
+    color: white;
+}
+
+#services-overview .service-description {
+    color: #DBC078;
+    font-size: 0.9em;
+    margin: 10px 0;
+}
+
+#services-overview .service-link {
+    color: #DBC078;
+    text-decoration: none;
+    font-weight: bold;
+}
+
