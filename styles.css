@@ -31,11 +31,6 @@ header {
     align-items: center;
 }
 
-.logo a {
-    color: white; /* Ensures the logo link text is white */
-    text-decoration: none;
-}
-
 .logo img {
     height: 50px; /* Adjust the size as needed */
 }
@@ -130,6 +125,7 @@ footer {
 .about-text h2 {
     font-size: 2em;
     margin-bottom: 0.5em;
+    color: #cbb26b;
 }
 
 .about-image {
@@ -162,7 +158,7 @@ footer {
 
 #services-overview h3 {
     font-size: 1.5em;
-    color: #cbb26b; /* Update for Service Area title color */
+    color: #cbb26b;
 }
 
 #services-overview .service-description {
@@ -172,7 +168,63 @@ footer {
 }
 
 #services-overview .service-link {
-    color: #DBC078;
+    color: #cbb26b;
     text-decoration: none;
+    font-weight: bold;
+}
+
+#get-vericounted {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #112d4e;
+}
+
+.get-vericounted-text {
+    width: 40%;
+    text-align: left;
+}
+
+.get-vericounted-text h2 {
+    font-size: 1.8em;
+    color: #cbb26b;
+}
+
+.get-vericounted-text p {
+    font-size: 1em;
+    color: white;
+}
+
+.steps {
+    display: flex;
+    justify-content: space-between;
+    width: 55%;
+}
+
+.step {
+    text-align: center;
+    width: 23%;
+}
+
+.step img {
+    width: 80px; /* Adjust size as needed */
+    height: auto;
+}
+
+.step p {
+    color: white;
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
+a.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #DBC078;
+    color: #112d4e;
+    text-decoration: none;
+    margin-top: 20px;
+    border-radius: 5px;
     font-weight: bold;
 }
