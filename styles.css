@@ -67,6 +67,76 @@ nav ul li a {
 
 .hero-content {
     max-width: 800px;
+```css
+/* styles.css */
+
+/* Add the @font-face rule at the beginning */
+@font-face {
+    font-family: 'Lora';
+    src: url('fonts/Lora-Regular.woff2') format('woff2'),
+         url('fonts/Lora-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Lora', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    background-color: #112d4e; /* Set the default background color */
+}
+
+header {
+    background-color: #112d4e;
+    color: white;
+    padding: 0.5em 1em;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px; /* Adjust the size as needed */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    background: url('images/hero-image.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    margin-top: 80px; /* Adjust this if header height changes */
+}
+
+.hero-content {
+    max-width: 800px;
 }
 
 .hero-content h1 {
@@ -205,8 +275,6 @@ footer {
 .steps-icons .step {
     text-align: center;
     color: #f9f9f9;
-    width: 100px; /* Adjust size as needed */
-    margin: 0 10px;
 }
 
 .steps-icons .step img {
@@ -246,4 +314,39 @@ footer {
 .commercial-text p {
     font-size: 1em;
     margin-bottom: 1em;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #112d4e;
+    color: white;
+}
+
+.footer-left img {
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.footer-left p {
+    margin: 5px 0;
+    color: #cbb26b;
+}
+
+.footer-right h3 {
+    color: #cbb26b;
+    margin-bottom: 10px;
+}
+
+.footer-right p {
+    margin: 5px 0;
+    color: #f9f9f9;
+}
+
+.social-icons a img {
+    width: 30px;
+    height: auto;
+    margin: 0 5px;
 }
