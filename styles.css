@@ -1,4 +1,4 @@
-/* styles.css */
+/* Updated CSS */
 
 /* Add the @font-face rule at the beginning */
 @font-face {
@@ -143,11 +143,13 @@ footer {
     padding: 20px;
     background-color: #112d4e;
     color: white;
+    text-align: left;
 }
 
 #services-overview .column {
     width: 30%;
     text-align: center;
+    padding: 10px;
 }
 
 #services-overview .icon img {
@@ -255,12 +257,6 @@ footer {
     color: white;
 }
 
-.footer-left {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
 .footer-left img {
     height: 50px;
     margin-bottom: 10px;
@@ -271,12 +267,6 @@ footer {
     color: #cbb26b;
 }
 
-.footer-right {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
-
 .footer-right h3 {
     color: #cbb26b;
     margin-bottom: 10px;
@@ -285,13 +275,6 @@ footer {
 .footer-right p {
     margin: 5px 0;
     color: #f9f9f9;
-}
-
-.social-icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10px;
 }
 
 .social-icons a img {
