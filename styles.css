@@ -151,7 +151,7 @@ footer {
 }
 
 #services-overview .icon img {
-    width: 150px; /* Adjust size as needed */
+    width: 120px; /* Adjust size as needed */
     height: auto;
 }
 
@@ -181,7 +181,7 @@ footer {
 }
 
 .new-section-content {
-    width: 60%;
+    width: 55%;
     color: #f9f9f9;
 }
 
@@ -198,17 +198,18 @@ footer {
 
 .steps-icons {
     display: flex;
-    justify-content: space-around;
-    width: 35%;
+    justify-content: space-between;
+    width: 40%;
 }
 
 .steps-icons .step {
     text-align: center;
     color: #f9f9f9;
+    margin: 0 10px; /* Adjust the margin to increase spacing */
 }
 
 .steps-icons .step img {
-    width: 100px; /* Adjust size as needed */
+    width: 80px; /* Adjust size as needed */
     height: auto;
     margin-bottom: 10px;
 }
