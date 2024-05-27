@@ -1,4 +1,4 @@
-/* Updated CSS */
+/* styles.css */
 
 /* Add the @font-face rule at the beginning */
 @font-face {
@@ -33,6 +33,9 @@ header {
 
 .logo img {
     height: 50px; /* Adjust the size as needed */
+    margin: 0;
+    padding: 0;
+    display: block;
 }
 
 nav ul {
@@ -143,17 +146,15 @@ footer {
     padding: 20px;
     background-color: #112d4e;
     color: white;
-    text-align: left;
 }
 
 #services-overview .column {
     width: 30%;
     text-align: center;
-    padding: 10px;
 }
 
 #services-overview .icon img {
-    width: 100px; /* Adjust size as needed */
+    width: 150px; /* Adjust size as needed */
     height: auto;
 }
 
