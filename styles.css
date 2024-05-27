@@ -125,7 +125,6 @@ footer {
 .about-text h2 {
     font-size: 2em;
     margin-bottom: 0.5em;
-    color: #cbb26b; /* Updated text color */
 }
 
 .about-image {
@@ -152,7 +151,7 @@ footer {
 }
 
 #services-overview .icon img {
-    width: 120px; /* Adjust size as needed */
+    width: 150px; /* Increased size */
     height: auto;
 }
 
@@ -182,7 +181,7 @@ footer {
 }
 
 .new-section-content {
-    width: 55%;
+    width: 60%;
     color: #f9f9f9;
 }
 
@@ -199,18 +198,17 @@ footer {
 
 .steps-icons {
     display: flex;
-    justify-content: space-between;
-    width: 40%;
+    justify-content: space-around;
+    width: 40%; /* Increased width */
 }
 
 .steps-icons .step {
     text-align: center;
     color: #f9f9f9;
-    margin: 0 10px; /* Adjust the margin to increase spacing */
 }
 
 .steps-icons .step img {
-    width: 90px; /* Adjust size to slightly larger */
+    width: 60px; /* Increased size */
     height: auto;
     margin-bottom: 10px;
 }
