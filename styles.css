@@ -265,6 +265,12 @@ footer {
     color: #cbb26b;
 }
 
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
 .footer-right h3 {
     color: #cbb26b;
     margin-bottom: 10px;
@@ -275,19 +281,20 @@ footer {
     color: #f9f9f9;
 }
 
+.social-icons {
+    display: flex;
+    margin-top: 10px;
+}
+
 .social-icons a img {
     width: 30px;
     height: auto;
     margin: 0 5px;
 }
 
-.ceo-image {
-    margin-top: 20px;
-}
-
 .ceo-image img {
-    width: 100px;
+    width: 150px; /* Adjust the size as needed */
     height: auto;
-    border-radius: 50%;
     margin-left: 10px;
+    border-radius: 0; /* Ensure the image is rectangular */
 }
