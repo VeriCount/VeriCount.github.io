@@ -125,6 +125,7 @@ footer {
 .about-text h2 {
     font-size: 2em;
     margin-bottom: 0.5em;
+    color: #cbb26b; /* Updated text color */
 }
 
 .about-image {
