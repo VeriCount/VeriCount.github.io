@@ -44,14 +44,14 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 0 10px;
     position: relative;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-weight: bold;
+    font-size: 0.9em; /* Slightly smaller text size */
 }
 
 nav ul li ul.dropdown {
@@ -79,8 +79,31 @@ nav ul li:hover ul.dropdown {
     display: block;
 }
 
+nav .search-form {
+    display: flex;
+    align-items: center;
+}
+
+nav .search-form input[type="text"] {
+    padding: 5px;
+    font-size: 0.9em;
+    border: none;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+nav .search-form button {
+    padding: 5px 10px;
+    font-size: 0.9em;
+    background-color: #DBC078;
+    color: #112d4e;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 .hero {
-    background: url('images/Boho1.jpg') no-repeat center center/cover;
+    background: url('images/hero-image.jpg') no-repeat center center/cover;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -89,24 +112,10 @@ nav ul li:hover ul.dropdown {
     color: white;
     padding: 20px;
     margin-top: 80px; /* Adjust this if header height changes */
-    position: relative;
-}
-
-.hero::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(17, 45, 78, 0.5); /* Adjust transparency as needed */
-    z-index: 1;
 }
 
 .hero-content {
     max-width: 800px;
-    position: relative;
-    z-index: 2;
 }
 
 .hero-content h1 {
