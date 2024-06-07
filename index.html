@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VeriCount - Home</title>
+    <meta name="description" content="VeriCount offers professional and accurate home inventory services.">
+    <meta property="og:title" content="VeriCount - Home">
+    <meta property="og:description" content="VeriCount offers professional and accurate home inventory services.">
+    <meta property="og:image" content="https://yourwebsite.com/images/VeriCountLogo1.png">
+    <meta property="og:url" content="https://yourwebsite.com">
+    <meta name="twitter:card" content="summary_large_image">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -11,7 +17,7 @@
         <div class="logo">
             <a href="index.html"><img src="images/VeriCountLogo1.png" alt="VeriCount Logo"></a>
         </div>
-        <nav>
+        <nav aria-label="Main Navigation">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about-us.html">About Us</a>
@@ -35,8 +41,8 @@
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="resources.html">Resources</a></li>
                 <li>
-                    <form class="search-form">
-                        <input type="text" placeholder="Search...">
+                    <form class="search-form" role="search">
+                        <input type="text" placeholder="Search..." aria-label="Search">
                         <button type="submit">Search</button>
                     </form>
                 </li>
@@ -144,6 +150,6 @@
             <img src="images/Tim1.png" alt="CEO">
         </div>
     </footer>
-    <script src="scripts.js"></script>
+    <script src="scripts.js" defer></script>
 </body>
 </html>

@@ -14,13 +14,35 @@
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="services.html">Services</a></li>
+                <li><a href="about-us.html">About Us</a>
+                    <ul class="dropdown">
+                        <li><a href="our-story.html">Our Story</a></li>
+                        <li><a href="our-team.html">Our Team</a></li>
+                        <li><a href="mission-values.html">Mission & Values</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                    </ul>
+                </li>
+                <li><a href="services.html">Services</a>
+                    <ul class="dropdown">
+                        <li><a href="home-inventory.html">Home Inventory Solution</a></li>
+                        <li><a href="commercial-inventory.html">Commercial Inventory</a></li>
+                        <li><a href="estate-inventory.html">Estate Inventory</a></li>
+                        <li><a href="relocation-inventory.html">Pre / Post Relocation Inventory</a></li>
+                        <li><a href="retail-inventory.html">Retail Inventory Review</a></li>
+                        <li><a href="warehouse-audit.html">Warehouse 3rd Party Audit</a></li>
+                    </ul>
+                </li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="resources.html">Resources</a></li>
+                <li>
+                    <form class="search-form">
+                        <input type="text" id="searchInput" placeholder="Search...">
+                        <button type="button" onclick="performSearch()">Search</button>
+                    </form>
+                </li>
             </ul>
         </nav>
-    </header>
+    </header>    
     <main>
         <section id="our-story" class="about-section">
             <div class="about-text">
