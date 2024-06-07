@@ -9,18 +9,27 @@
     font-style: normal;
 }
 
+/* Define CSS Variables for Colors */
+:root {
+    --primary-color: #112d4e;
+    --secondary-color: #cbb26b;
+    --accent-color: #DBC078;
+    --text-color: #f9f9f9;
+    --background-color: #112d4e;
+}
+
 body {
     font-family: 'Lora', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: white;
-    background-color: #112d4e; /* Set the default background color */
+    color: var(--text-color);
+    background-color: var(--background-color);
 }
 
 header {
-    background-color: #112d4e;
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--text-color);
     padding: 0.5em 1em;
     position: fixed;
     width: 100%;
@@ -49,7 +58,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: var(--text-color);
     text-decoration: none;
     font-size: 0.9em; /* Slightly smaller text size */
 }
@@ -59,7 +68,7 @@ nav ul li ul.dropdown {
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #112d4e;
+    background-color: var(--primary-color);
     padding: 10px 0;
     border-radius: 5px;
 }
@@ -71,7 +80,7 @@ nav ul li ul.dropdown li {
 nav ul li ul.dropdown li a {
     display: block;
     padding: 10px 20px;
-    color: white;
+    color: var(--text-color);
     text-decoration: none;
 }
 
@@ -95,8 +104,8 @@ nav .search-form input[type="text"] {
 nav .search-form button {
     padding: 5px 10px;
     font-size: 0.9em;
-    background-color: #DBC078;
-    color: #112d4e;
+    background-color: var(--accent-color);
+    color: var(--primary-color);
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -109,7 +118,7 @@ nav .search-form button {
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: white;
+    color: var(--text-color);
     padding: 20px;
     margin-top: 80px; /* Adjust this if header height changes */
 }
@@ -131,8 +140,8 @@ nav .search-form button {
 .btn {
     display: inline-block;
     padding: 15px 30px;
-    background-color: #DBC078;
-    color: #112d4e;
+    background-color: var(--accent-color);
+    color: var(--primary-color);
     text-decoration: none;
     margin-top: 20px;
     border-radius: 5px;
@@ -150,16 +159,16 @@ section {
 }
 
 footer {
-    background-color: #112d4e;
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--text-color);
     text-align: center;
     padding: 1em;
     position: relative;
 }
 
 .about-section {
-    background-color: #112d4e;
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--text-color);
     padding: 20px;
     display: flex;
     align-items: center;
@@ -174,7 +183,7 @@ footer {
 .about-text h2 {
     font-size: 2em;
     margin-bottom: 0.5em;
-    color: #cbb26b;
+    color: var(--secondary-color);
 }
 
 .about-image {
@@ -191,8 +200,8 @@ footer {
     display: flex;
     justify-content: space-around;
     padding: 20px;
-    background-color: #112d4e;
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--text-color);
 }
 
 #services-overview .column {
@@ -207,17 +216,17 @@ footer {
 
 #services-overview h3 {
     font-size: 1.5em;
-    color: #cbb26b;
+    color: var(--secondary-color);
 }
 
 #services-overview .service-description {
-    color: #f9f9f9;
+    color: var(--text-color);
     font-size: 0.9em;
     margin: 10px 0;
 }
 
 #services-overview .service-link {
-    color: #cbb26b;
+    color: var(--secondary-color);
     text-decoration: none;
     font-weight: bold;
 }
@@ -227,17 +236,17 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #112d4e;
+    background-color: var(--primary-color);
 }
 
 .new-section-content {
     width: 55%;
-    color: #f9f9f9;
+    color: var(--text-color);
 }
 
 .new-section-content h2 {
     font-size: 2em;
-    color: #cbb26b;
+    color: var(--secondary-color);
     margin-bottom: 0.5em;
 }
 
@@ -254,7 +263,7 @@ footer {
 
 .steps-icons .step {
     text-align: center;
-    color: #f9f9f9;
+    color: var(--text-color);
 }
 
 .steps-icons .step img {
@@ -268,7 +277,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #112d4e;
+    background-color: var(--primary-color);
 }
 
 .commercial-image {
@@ -282,12 +291,12 @@ footer {
 
 .commercial-text {
     width: 55%;
-    color: #f9f9f9;
+    color: var(--text-color);
 }
 
 .commercial-text h2 {
     font-size: 2em;
-    color: #cbb26b;
+    color: var(--secondary-color);
     margin-bottom: 0.5em;
 }
 
@@ -301,8 +310,8 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #112d4e;
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--text-color);
 }
 
 .footer-left img {
@@ -312,17 +321,17 @@ footer {
 
 .footer-left p {
     margin: 5px 0;
-    color: #cbb26b;
+    color: var(--secondary-color);
 }
 
 .footer-right h3 {
-    color: #cbb26b;
+    color: var(--secondary-color);
     margin-bottom: 10px;
 }
 
 .footer-right p {
     margin: 5px 0;
-    color: #f9f9f9;
+    color: var(--text-color);
 }
 
 .social-icons a img {
@@ -336,4 +345,26 @@ footer {
     height: auto;
     border-radius: 0;
     margin-left: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-section, .new-section, .commercial-section, .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-text, .new-section-content, .commercial-text, .about-image, .commercial-image {
+        width: 100%;
+        padding: 0;
+    }
+
+    .steps-icons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .steps-icons .step {
+        margin-bottom: 20px;
+    }
 }
