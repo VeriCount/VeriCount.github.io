@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VeriCount - Contact</title>
+    <title>Contact Us - VeriCount</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -15,49 +14,63 @@
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about-us.html">About Us</a>
-                    <ul class="dropdown">
-                        <li><a href="our-story.html">Our Story</a></li>
-                        <li><a href="our-team.html">Our Team</a></li>
-                        <li><a href="mission-values.html">Mission & Values</a></li>
-                        <li><a href="careers.html">Careers</a></li>
-                    </ul>
-                </li>
-                <li><a href="services.html">Services</a>
-                    <ul class="dropdown">
-                        <li><a href="home-inventory.html">Home Inventory Solution</a></li>
-                        <li><a href="commercial-inventory.html">Commercial Inventory</a></li>
-                        <li><a href="estate-inventory.html">Estate Inventory</a></li>
-                        <li><a href="relocation-inventory.html">Pre / Post Relocation Inventory</a></li>
-                        <li><a href="retail-inventory.html">Retail Inventory Review</a></li>
-                        <li><a href="warehouse-audit.html">Warehouse 3rd Party Audit</a></li>
-                    </ul>
-                </li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
                 <li><a href="resources.html">Resources</a></li>
-                <li>
-                    <form class="search-form">
-                        <input type="text" id="searchInput" placeholder="Search...">
-                        <button type="button" onclick="performSearch()">Search</button>
-                    </form>
-                </li>
             </ul>
         </nav>
-    </header> 
+    </header>
     <main>
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <form>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Contact Us</h1>
+                <p>We'd love to hear from you. Please reach out with any questions or inquiries.</p>
+            </div>
+        </section>
+
+        <section class="contact-details">
+            <h2>Our Contact Information</h2>
+            <p>Feel free to get in touch with us through the following contact details:</p>
+            <ul>
+                <li><strong>Phone:</strong> (317) 628-5143</li>
+                <li><strong>Email:</strong> info@vericount.com</li>
+                <li><strong>Address:</strong> 2726 Autumn Rd. Indianapolis, IN 46229</li>
+            </ul>
+        </section>
+
+        <section class="contact-form">
+            <h2>Send Us a Message</h2>
+            <form action="submit_form.php" method="post">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
+                
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                
                 <button type="submit">Submit</button>
             </form>
         </section>
     </main>
-    <footer>
-        <p>&copy; 2024 VeriCount</p>
+    <footer class="footer-container">
+        <div class="footer-left">
+            <img src="images/VeriCountLogo1.png" alt="VeriCount Logo">
+            <p>VeriCount, LLC<br>Indianapolis, IN</p>
+            <p>All Rights Reserved. VeriCount LLC</p>
+        </div>
+        <div class="footer-right">
+            <h3>Contact VeriCount</h3>
+            <p>Phone: (317) 628-5143<br>Address: 2726 Autumn Rd. Indianapolis, IN 46229</p>
+            <div class="social-icons">
+                <a href="#"><img src="images/FacebookIcon.png" alt="Facebook"></a>
+                <a href="#"><img src="images/InstagramIcon.png" alt="Instagram"></a>
+                <a href="#"><img src="images/LinkedInIcon.png" alt="LinkedIn"></a>
+            </div>
+        </div>
     </footer>
+    <script src="scripts.js" defer></script>
 </body>
 </html>
