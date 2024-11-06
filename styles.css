@@ -60,7 +60,7 @@ nav ul li {
 nav ul li a {
     color: var(--text-color);
     text-decoration: none;
-    font-size: 0.9em; /* Slightly smaller text size */
+    font-size: 0.9em;
 }
 
 nav ul li ul.dropdown {
@@ -111,6 +111,7 @@ nav .search-form button {
     cursor: pointer;
 }
 
+/* Updated Hero Styling */
 .hero {
     background: url('images/hero-image.jpg') no-repeat center center/cover;
     height: 100vh;
@@ -146,16 +147,33 @@ nav .search-form button {
     margin-top: 20px;
     border-radius: 5px;
     font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--secondary-color);
 }
 
 main {
     padding: 2em 1em;
-    margin-top: 80px; /* Adjust this if header height changes */
+    margin-top: 80px;
 }
 
 section {
     margin: 2em 0;
     text-align: center;
+}
+
+/* Updated Section Spacing */
+section, .content-wrapper {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 20px;
 }
 
 footer {
@@ -347,27 +365,7 @@ footer {
     margin-left: 10px;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .about-section, .new-section, .commercial-section, .footer-container {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .about-text, .new-section-content, .commercial-text, .about-image, .commercial-image {
-        width: 100%;
-        padding: 0;
-    }
-
-    .steps-icons {
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .steps-icons .step {
-        margin-bottom: 20px;
-    }
-
+/* Contact Details and Form */
 .contact-details, .contact-form {
     background-color: var(--primary-color);
     color: var(--text-color);
@@ -414,4 +412,32 @@ footer {
     margin-top: 20px;
 }
 
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-section, .new-section, .commercial-section, .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-text, .new-section-content, .commercial-text, .about-image, .commercial-image {
+        width: 100%;
+        padding: 0;
+    }
+
+    .steps-icons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .steps-icons .step {
+        margin-bottom: 20px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
 }
