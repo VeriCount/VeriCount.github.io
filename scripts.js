@@ -19,6 +19,16 @@ document.addEventListener('DOMContentLoaded', () => {
             performSearch();
         });
     }
+
+    // Hamburger menu toggle
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.getElementById("main-nav").querySelector("ul");
+    
+    if (hamburger) {
+        hamburger.addEventListener("click", function() {
+            navMenu.classList.toggle("show");
+        });
+    }
 });
 
 // Encapsulated search function
@@ -37,10 +47,3 @@ function performSearch() {
         alert(`The term "${searchInput}" was not found.`);
     }
 }
-
-document.addEventListener("DOMContentLoaded", function() {
-    function toggleMenu() {
-        const nav = document.getElementById("main-nav").querySelector("ul");
-        nav.classList.toggle("show");
-    }
-});
