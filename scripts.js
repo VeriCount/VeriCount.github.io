@@ -37,3 +37,10 @@ function performSearch() {
         alert(`The term "${searchInput}" was not found.`);
     }
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+    function toggleMenu() {
+        const nav = document.getElementById("main-nav").querySelector("ul");
+        nav.classList.toggle("show");
+    }
+});
