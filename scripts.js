@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Hamburger menu toggle
     const hamburger = document.querySelector(".hamburger");
-    const navMenu = document.getElementById("main-nav").querySelector("ul");
+    const navMenu = document.querySelector("nav ul"); // Adjusted selector to target <nav> directly
     
     if (hamburger) {
         hamburger.addEventListener("click", function() {
