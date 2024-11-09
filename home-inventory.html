@@ -3,8 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - VeriCount</title>
+    <title>Home Inventory - VeriCount</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Home Inventory Page Styles */
+        .hero {
+            background-color: #112d4e;
+            color: #fff;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 2.5em;
+            margin-bottom: 0.5em;
+        }
+        .cost-structure-table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background-color: #f9f9f9;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .cost-structure-table th, .cost-structure-table td {
+            padding: 12px;
+            border: 1px solid #ccc;
+            text-align: center;
+        }
+        .cost-structure-table th {
+            background-color: #dbc078;
+            color: #112d4e;
+        }
+        .step-section {
+            max-width: 800px;
+            margin: 40px auto;
+            text-align: left;
+        }
+        .step {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        .step img {
+            width: 100px;
+            height: 100px;
+            margin-right: 20px;
+            border-radius: 10px;
+        }
+        .step-number {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #112d4e;
+            margin-right: 10px;
+        }
+        .post-inventory {
+            max-width: 800px;
+            margin: 40px auto;
+            text-align: left;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -22,40 +82,99 @@
         </nav>
     </header>
     <main>
+        <!-- Hero Section -->
         <section class="hero">
-            <div class="hero-content">
-                <h1>About Us</h1>
-                <p>Learn more about our company and our team.</p>
+            <h1>Home Inventory Services</h1>
+            <p>Comprehensive, accurate home inventories for your peace of mind.</p>
+        </section>
+
+        <!-- Cost Structure Table -->
+        <section>
+            <h2 style="text-align:center; margin-top: 40px;">Cost Structure</h2>
+            <table class="cost-structure-table">
+                <tr>
+                    <th>Home Size (Sq. Ft.)</th>
+                    <th>Rate ($)</th>
+                    <th>Estimated Time to Complete</th>
+                    <th>What's Included</th>
+                </tr>
+                <tr>
+                    <td>Up to 1,500 Sq. Ft.</td>
+                    <td>$500</td>
+                    <td>2-3 hours</td>
+                    <td>Photos, item descriptions, estimated values, digital report</td>
+                </tr>
+                <tr>
+                    <td>1,500 - 3,000 Sq. Ft.</td>
+                    <td>$750</td>
+                    <td>4-5 hours</td>
+                    <td>Photos, item descriptions, estimated values, digital report</td>
+                </tr>
+                <tr>
+                    <td>3,000 - 5,000 Sq. Ft.</td>
+                    <td>$1,000</td>
+                    <td>6-8 hours</td>
+                    <td>Photos, item descriptions, estimated values, digital report</td>
+                </tr>
+                <tr>
+                    <td>5,000+ Sq. Ft.</td>
+                    <td>Contact for quote</td>
+                    <td>Varies</td>
+                    <td>Photos, item descriptions, estimated values, digital report</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Step-by-Step Process Section -->
+        <section class="step-section">
+            <h2>Step-by-Step Home Inventory Process</h2>
+
+            <div class="step">
+                <img src="images/prep.jpg" alt="Preparation">
+                <div>
+                    <span class="step-number">1.</span>
+                    <strong>Initial Consultation</strong>
+                    <p>We begin with a consultation to discuss your home inventory needs, answer questions, and schedule a convenient time.</p>
+                </div>
+            </div>
+
+            <div class="step">
+                <img src="images/planning.jpg" alt="Planning">
+                <div>
+                    <span class="step-number">2.</span>
+                    <strong>Planning and Preparation</strong>
+                    <p>Our team prepares all the necessary equipment and documents to ensure a smooth and efficient inventory process.</p>
+                </div>
+            </div>
+
+            <div class="step">
+                <img src="images/inventory.jpg" alt="Inventory">
+                <div>
+                    <span class="step-number">3.</span>
+                    <strong>Inventory Day</strong>
+                    <p>We arrive at your home, document each item with photos and descriptions, and record values for an accurate report.</p>
+                </div>
+            </div>
+
+            <div class="step">
+                <img src="images/report.jpg" alt="Report">
+                <div>
+                    <span class="step-number">4.</span>
+                    <strong>Review and Delivery</strong>
+                    <p>After completion, we review the inventory and provide you with a comprehensive digital report of your home’s contents.</p>
+                </div>
             </div>
         </section>
 
-        <section class="our-story">
-            <h2>Our Story</h2>
-            <p>VeriCount was founded with the mission to provide accurate and detailed home inventory services...</p>
-        </section>
-
-        <section class="our-mission">
-            <h2>Our Mission</h2>
-            <p>Our mission is to simplify the inventory process and ensure peace of mind for our clients...</p>
-        </section>
-
-        <section class="our-team">
-            <h2>Our Team</h2>
-            <div class="team-members">
-                <div class="team-member">
-                    <img src="images/team-member1.jpg" alt="Team Member 1">
-                    <h3>John Doe</h3>
-                    <p>CEO</p>
-                </div>
-                <div class="team-member">
-                    <img src="images/team-member2.jpg" alt="Team Member 2">
-                    <h3>Jane Smith</h3>
-                    <p>COO</p>
-                </div>
-                <!-- Add more team members as needed -->
-            </div>
+        <!-- Post-Inventory Reminders Section -->
+        <section class="post-inventory">
+            <h2>Post-Inventory Considerations</h2>
+            <p><strong>Large Purchases:</strong> After significant purchases (such as furniture, appliances, or electronics), remember to update your home inventory report to reflect these new items.</p>
+            <p><strong>Regular Updates:</strong> To keep your records current, we recommend refreshing your home inventory every 2-3 years, especially if you've made significant changes.</p>
+            <p><strong>Digital Backup:</strong> VeriCount offers secure digital backups of your inventory report, ensuring your information is safe and accessible when needed.</p>
         </section>
     </main>
+
     <footer class="footer-container">
         <div class="footer-left">
             <img src="images/VeriCountLogo1.png" alt="VeriCount Logo">
