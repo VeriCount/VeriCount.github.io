@@ -136,7 +136,7 @@ nav ul li ul.dropdown li a {
     align-items: center;
     text-align: center;
     color: var(--text-color);
-    margin-top: 0; /* Remove margin-top */
+    margin-top: 0;
     padding-top: 80px; /* Adjust this based on header height */
 }
 
@@ -163,6 +163,10 @@ nav ul li ul.dropdown li a {
     margin-top: 20px;
     border-radius: 5px;
     font-weight: bold;
+}
+
+.btn:hover {
+    background-color: var(--secondary-color);
 }
 
 /* Main Content Offset for Fixed Header */
@@ -222,7 +226,7 @@ section {
 }
 
 #services-overview .icon img {
-    width: 120px; /* Adjust size as needed */
+    width: 120px;
     height: auto;
 }
 
@@ -241,6 +245,69 @@ section {
     color: var(--secondary-color);
     text-decoration: none;
     font-weight: bold;
+}
+
+/* Get VeriCounted Section */
+.new-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+.new-section-content {
+    width: 50%;
+    padding-right: 20px;
+}
+
+.new-section-content h2 {
+    font-size: 2.5em;
+    color: var(--accent-color);
+    margin-bottom: 20px;
+}
+
+.new-section-content p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.new-section-content .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.steps-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 45%;
+}
+
+.steps-icons .step {
+    text-align: center;
+    width: 45%;
+    margin-bottom: 20px;
+}
+
+.steps-icons .step img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.steps-icons .step p {
+    font-size: 1em;
+    margin: 0;
+    color: var(--text-color);
 }
 
 /* Footer */
