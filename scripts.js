@@ -1,6 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Add interactive features here
-
     // Smooth scrolling for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
@@ -17,16 +15,6 @@ document.addEventListener('DOMContentLoaded', () => {
         searchForm.addEventListener('submit', function (e) {
             e.preventDefault();
             performSearch();
-        });
-    }
-
-    // Hamburger menu toggle
-    const hamburger = document.querySelector(".hamburger");
-    const navMenu = document.querySelector("nav ul"); // Adjusted selector to target <nav> directly
-    
-    if (hamburger) {
-        hamburger.addEventListener("click", function() {
-            navMenu.classList.toggle("show");
         });
     }
 });
